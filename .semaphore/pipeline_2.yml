@@ -19,7 +19,7 @@ blocks:
       prologue:
         commands:
           - sem-version python 3.7
-          - checkout
+          - checkout@v2
           - cache restore
           - mkdir -p .pip_cache
           - pip install --cache-dir .pip_cache -r requirements.txt
